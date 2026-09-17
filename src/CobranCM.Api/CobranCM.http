@@ -1,0 +1,4 @@
+@CobranCM.Api_HostAddress = http://localhost:5265
+
+GET {{CobranCM.Api_HostAddress}}/openapi/v1.json
+Accept: application/json

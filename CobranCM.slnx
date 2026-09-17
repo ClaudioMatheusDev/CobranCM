@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/CobranCM.Api/CobranCM.Api.csproj" />
+  <Project Path="src/CobranCM.Application/CobranCM.Application.csproj" />
+  <Project Path="src/CobranCM.Domain/CobranCM.Domain.csproj" />
+  <Project Path="src/CobranCM.Infrastructure/CobranCM.Infrastructure.csproj" />
+</Solution>
