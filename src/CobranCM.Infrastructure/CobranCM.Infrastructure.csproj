@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.19" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.19" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.19" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CobranCM.Application\CobranCM.Application.csproj" />
+    <ProjectReference Include="..\CobranCM.Domain\CobranCM.Domain.csproj" />
   </ItemGroup>
 
 </Project>
