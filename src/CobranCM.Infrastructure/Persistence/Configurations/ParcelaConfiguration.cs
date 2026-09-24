@@ -21,5 +21,10 @@ public class ParcelaConfiguration : IEntityTypeConfiguration<Parcela>
 
         builder.Property(parcela => parcela.Status)
             .IsRequired();
+
+        builder.HasOne<Cobranca>()
+            .WithMany()
+            .HasForeignKey(parcela => parcela.IDCobranca)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

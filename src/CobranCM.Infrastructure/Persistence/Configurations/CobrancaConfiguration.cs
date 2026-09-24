@@ -30,5 +30,10 @@ public class CobrancaConfiguration : IEntityTypeConfiguration<Cobranca>
 
         builder.Property(cobranca => cobranca.DataVencimento)
             .IsRequired();
+
+        builder.HasOne<Cliente>()
+            .WithMany()
+            .HasForeignKey(cobranca => cobranca.IDCliente)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }
