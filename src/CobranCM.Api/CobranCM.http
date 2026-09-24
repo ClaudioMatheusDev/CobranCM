@@ -2,3 +2,27 @@
 
 GET {{CobranCM.Api_HostAddress}}/openapi/v1.json
 Accept: application/json
+
+###
+
+POST {{CobranCM.Api_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "nome": "Cliente Teste",
+  "dataNascimento": "1990-01-01",
+  "email": "cliente.teste@email.com",
+  "documento": "12345678900",
+  "telefone": "11999999999"
+}
+
+###
+
+POST {{CobranCM.Api_HostAddress}}/api/cobrancas
+Content-Type: application/json
+
+{
+  "idCliente": 1,
+  "valorOriginal": 150.75,
+  "dataVencimento": "2026-10-10"
+}
